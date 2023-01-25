@@ -1,0 +1,37 @@
+{{ define "index" }}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{{ template "head" }}
+
+<body>
+    {{ template "navbar" }}
+    <header class="bg-primary bg-gradient text-white mt-3" style="height: 270px;">
+        <div class="container px-4 py-5 text-center">
+            <h1 class="fw-bolder">Welcome to Movie App</h1>
+            <p class="lead">This App Coding with GoLang</p>
+            <a class="btn btn-lg btn-light" href="/movies">See Movies!</a>
+        </div>
+    </header>
+    <!-- About section-->
+    <section id="about">
+        <div class="container px-4 py-5">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>About this page</h2>
+                    <p class="lead">This Page Created by Mehmet Solak & Using Web Scraping and Go Templates. Also This Project maded for beginner Go Developer:</p>
+                    <ul>
+                        <li>Web Scraping with GoLang</li>
+                        <li>About Go Templates</li>
+                        <li>About Bootstrap</li>
+                        <li>Create Web App With GoLang</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+{{ end }}
