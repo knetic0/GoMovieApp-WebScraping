@@ -11,7 +11,7 @@
         <div class="form-group card w-50 align-items-center">
             <label for="search" class="mt-2 mb-2" style="font-size: xx-large">Search Movie</label>
             <input type="text" class="form-control" style="width: 600px" id="search" name="search" placeholder="Search Movie...">
-            <span style="font-size: medium" class="text-success mt-2">Please enter movie name as `shawshank_redemption` & `avatar_the_way_of_water`</span>
+            <span style="font-size: large" class="text-success mt-2">Please enter movie name</span>
             <button type="submit" class="btn btn-primary mt-2 mb-2" id="submit">Search</button>
         </div>
     </form>
@@ -25,10 +25,10 @@
         </thead>
         <tbody>
         {{ range $index, $value := .Content }}
-        <tr>
-            <th scope="row">{{ index $.Headers $index }}</th>
-            <td>{{ $value }}</td>
-        </tr>
+            <tr>
+                <th scope="row">{{ index $.Headers $index }}</th>
+                <td>{{ $value }}</td>
+            </tr>
         {{ end }}
         </tbody>
     </table>

@@ -17,7 +17,7 @@ func ScrapInfo(url string) []string {
 	}
 
 	doc, _ := goquery.NewDocumentFromReader(res.Body)
-
+	
 	doc.Find(".meta-row.clearfix").Each(func(i int, selection *goquery.Selection) {
 		info := selection.Find(".meta-value").Text()
 		infos = append(infos, info)
