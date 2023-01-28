@@ -16,11 +16,7 @@ type Search struct {
 
 func StringFormat(str string) string {
 	str = strings.ToLower(str)
-	for i := 0; i < len(str); i++ {
-		if str[i] == ' ' {
-			str = strings.Replace(str, " ", "_", i)
-		}
-	}
+	str = strings.Replace(str, " ", "_", -1)
 	return str
 }
 
